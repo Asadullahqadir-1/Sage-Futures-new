@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
 import EcosystemPuzzle from "../components/EcosystemPuzzle";
 import collaborationImage from "../images/2nd image.jpg";
+import blackChildImage from "../images/black child.jpg";
 
 const PROGRAM_PILLARS = [
   {
@@ -31,8 +32,7 @@ const PROGRAM_PILLARS = [
     description:
       "Programming and infrastructure that support youth leadership, small enterprises, and social innovators in South DeKalb to grow in place rather than relocate for opportunity.",
     link: "/programs",
-    image:
-      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=600",
+    image: blackChildImage,
     imageAlt: "Youth and community",
   },
   {
