@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
 import EcosystemPuzzle from "../components/EcosystemPuzzle";
+import collaborationImage from "../images/2nd image.jpg";
 
 const PROGRAM_PILLARS = [
   {
@@ -40,8 +41,7 @@ const PROGRAM_PILLARS = [
     description:
       "Environmental education, sustainable food systems, and land stewardship programs that strengthen resilience and ecological health as core components of community wealth.",
     link: "/programs",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=600",
+    image: collaborationImage,
     imageAlt: "Community collaboration and environmental stewardship",
   },
 ];

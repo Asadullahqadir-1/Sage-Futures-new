@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import EcosystemPuzzle from '../components/EcosystemPuzzle';
+import heroImage from '../images/1st image.jpg';
+import missionImage from '../images/2nd image.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Home: React.FC = () => {
       <section className="relative min-h-[90vh] py-24 md:py-36 bg-brand-offwhite border-b border-brand-stone overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=2070"
+            src={heroImage}
             alt="Community building and involvement"
             className="w-full h-full object-cover opacity-40 grayscale-[0.3] contrast-125"
           />
@@ -58,7 +60,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                src={missionImage}
                 alt="Community involvement and collaboration"
                 className="w-full h-64 md:h-80 object-cover"
               />
