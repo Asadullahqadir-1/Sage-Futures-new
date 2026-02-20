@@ -16,7 +16,7 @@ const CommunityWealthManagement: React.FC = () => {
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
                 alt="Community building and collaboration"
                 className="w-full h-56 md:h-64 object-cover"
               />

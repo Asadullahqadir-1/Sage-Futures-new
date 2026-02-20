@@ -41,7 +41,7 @@ const PROGRAM_PILLARS = [
       "Environmental education, sustainable food systems, and land stewardship programs that strengthen resilience and ecological health as core components of community wealth.",
     link: "/programs",
     image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600",
     imageAlt: "Community collaboration and environmental stewardship",
   },
 ];

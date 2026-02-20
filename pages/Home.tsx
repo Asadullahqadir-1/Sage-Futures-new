@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <section className="relative min-h-[90vh] py-24 md:py-36 bg-brand-offwhite border-b border-brand-stone overflow-hidden flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=2070"
+            src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=2070"
             alt="Community building and involvement"
             className="w-full h-full object-cover opacity-40 grayscale-[0.3] contrast-125"
           />
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
                 alt="Community involvement and collaboration"
                 className="w-full h-64 md:h-80 object-cover"
               />
