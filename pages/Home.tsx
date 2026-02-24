@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import EcosystemPuzzle from '../components/EcosystemPuzzle';
 import heroImage from '../images/1st image.jpg';
-import missionImage from '../images/founder.jpg';
+import missionImage from '../images/2nd image.jpg';
 
 const Home: React.FC = () => {
   return (
