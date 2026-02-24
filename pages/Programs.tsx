@@ -4,6 +4,7 @@ import { Reveal } from "../components/Reveal";
 import EcosystemPuzzle from "../components/EcosystemPuzzle";
 import founderImage from "../images/founder.jpg";
 import blackChildImage from "../images/black child.jpg";
+import sharedProsperityImage from "../images/Shared Prosperity.jpg";
 
 const PROGRAM_PILLARS = [
   {
@@ -22,9 +23,8 @@ const PROGRAM_PILLARS = [
     description:
       "Initiatives that develop tools and structures for locally held wealth, including cooperative models, community enterprises, and mechanisms for keeping key assets in community control.",
     link: "/contact",
-    image:
-      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=600",
-    imageAlt: "Enterprise and innovation",
+    image: sharedProsperityImage,
+    imageAlt: "Shared prosperity and community wealth",
   },
   {
     title: "Youth & Enterprise Infrastructure",
