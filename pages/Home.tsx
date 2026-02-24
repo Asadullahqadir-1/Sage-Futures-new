@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import EcosystemPuzzle from '../components/EcosystemPuzzle';
 import heroImage from '../images/1st image.jpg';
-import missionImage from '../images/2nd image.jpg';
+import missionImage from '../images/founder.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -168,7 +168,7 @@ const Home: React.FC = () => {
                 Community gardens and sustainable land use anchor our work in South DeKalb. Goddesses Garden advances land stewardship, environmental education, and sustainable food systems—building resilience and connection to place.
               </p>
               <Link
-                to="/programs"
+                to="/contact"
                 className="inline-block text-brand-sage font-semibold text-sm uppercase tracking-widest hover:text-brand-brass transition-colors"
               >
                 Learn more about our programs →

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Reveal } from "../components/Reveal";
 import EcosystemPuzzle from "../components/EcosystemPuzzle";
-import collaborationImage from "../images/2nd image.jpg";
+import founderImage from "../images/founder.jpg";
 import blackChildImage from "../images/black child.jpg";
 
 const PROGRAM_PILLARS = [
@@ -11,7 +11,7 @@ const PROGRAM_PILLARS = [
     sublabel: "Built Environment",
     description:
       "Projects that preserve community character while adapting underutilized properties for mixed-use, mixed-income, and community-serving purposes in South DeKalb.",
-    link: "/community-wealth-management",
+    link: "/contact",
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&q=80&w=600",
     imageAlt: "Community garden and built environment",
@@ -21,7 +21,7 @@ const PROGRAM_PILLARS = [
     sublabel: "Shared Prosperity",
     description:
       "Initiatives that develop tools and structures for locally held wealth, including cooperative models, community enterprises, and mechanisms for keeping key assets in community control.",
-    link: "/community-wealth-management",
+    link: "/contact",
     image:
       "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=600",
     imageAlt: "Enterprise and innovation",
@@ -31,7 +31,7 @@ const PROGRAM_PILLARS = [
     sublabel: "WOW Kids & EcoBator",
     description:
       "Programming and infrastructure that support youth leadership, small enterprises, and social innovators in South DeKalb to grow in place rather than relocate for opportunity.",
-    link: "/programs",
+    link: "/contact",
     image: blackChildImage,
     imageAlt: "Youth and community",
   },
@@ -40,9 +40,9 @@ const PROGRAM_PILLARS = [
     sublabel: "Goddesses Garden",
     description:
       "Environmental education, sustainable food systems, and land stewardship programs that strengthen resilience and ecological health as core components of community wealth.",
-    link: "/programs",
-    image: collaborationImage,
-    imageAlt: "Community collaboration and environmental stewardship",
+    link: "/contact",
+    image: "",
+    imageAlt: "",
   },
 ];
 
@@ -64,51 +64,57 @@ const Programs: React.FC = () => {
         <Reveal as="section" className="space-y-12" delayMs={120}>
           <h2 className="text-xl md:text-2xl font-serif text-brand-sage">Program Pillars</h2>
           <div className="space-y-12">
-            {PROGRAM_PILLARS.map((program, i) => (
-              <div
-                key={program.sublabel}
-                className="bg-white border border-brand-stone/30 shadow-sm overflow-hidden"
-              >
+            {PROGRAM_PILLARS.map((program, i) => {
+              const hasImage = Boolean(program.image);
+
+              return (
                 <div
-                  className={`grid md:grid-cols-2 gap-0 ${
-                    i % 2 === 1 ? "md:flex-row-reverse" : ""
-                  }`}
+                  key={program.sublabel}
+                  className="bg-white border border-brand-stone/30 shadow-sm overflow-hidden"
                 >
                   <div
-                    className={`relative h-48 md:h-64 md:min-h-[256px] ${
-                      i % 2 === 1 ? "md:order-2" : ""
+                    className={`grid gap-0 ${hasImage ? "md:grid-cols-2" : ""} ${
+                      i % 2 === 1 ? "md:flex-row-reverse" : ""
                     }`}
                   >
-                    <img
-                      src={program.image}
-                      alt={program.imageAlt}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div
-                    className={`p-8 flex flex-col justify-center ${
-                      i % 2 === 1 ? "md:order-1" : ""
-                    }`}
-                  >
-                    <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass mb-1">
-                      {program.sublabel}
-                    </p>
-                    <h3 className="text-lg font-serif text-brand-charcoal mb-3">
-                      {program.title}
-                    </h3>
-                    <p className="text-sm md:text-base text-brand-charcoal/75 leading-relaxed mb-4">
-                      {program.description}
-                    </p>
-                    <Link
-                      to={program.link}
-                      className="text-brand-sage font-semibold text-sm uppercase tracking-widest hover:text-brand-brass transition-colors w-fit"
+                    {hasImage && (
+                      <div
+                        className={`relative h-48 md:h-64 md:min-h-[256px] ${
+                          i % 2 === 1 ? "md:order-2" : ""
+                        }`}
+                      >
+                        <img
+                          src={program.image}
+                          alt={program.imageAlt}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div
+                      className={`p-8 flex flex-col justify-center ${
+                        hasImage && i % 2 === 1 ? "md:order-1" : ""
+                      }`}
                     >
-                      Learn more →
-                    </Link>
+                      <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass mb-1">
+                        {program.sublabel}
+                      </p>
+                      <h3 className="text-lg font-serif text-brand-charcoal mb-3">
+                        {program.title}
+                      </h3>
+                      <p className="text-sm md:text-base text-brand-charcoal/75 leading-relaxed mb-4">
+                        {program.description}
+                      </p>
+                      <Link
+                        to={program.link}
+                        className="text-brand-sage font-semibold text-sm uppercase tracking-widest hover:text-brand-brass transition-colors w-fit"
+                      >
+                        Learn more →
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </Reveal>
       </div>
