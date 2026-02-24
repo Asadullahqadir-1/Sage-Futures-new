@@ -4,7 +4,7 @@ import { Reveal } from "../components/Reveal";
 import EcosystemPuzzle from "../components/EcosystemPuzzle";
 import founderImage from "../images/founder.jpg";
 import blackChildImage from "../images/black child.jpg";
-import sharedProsperityImage from "../images/Shared Prosperity.jpg";
+import sharedProsperityImage from "../images/Shared-Prosperity.jpg";
 
 const PROGRAM_PILLARS = [
   {
