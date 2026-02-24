@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import EcosystemPuzzle from '../components/EcosystemPuzzle';
 import heroImage from '../images/1st image.jpg';
-import missionImage from '../images/2nd image.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -45,26 +44,17 @@ const Home: React.FC = () => {
         <div className="absolute right-0 bottom-0 w-1/4 h-full bg-brand-stone/20 hidden lg:block -skew-x-[20deg] origin-top translate-x-24 z-10" aria-hidden="true" />
       </section>
 
-      {/* Mission Snapshot with Community Involvement Image */}
+      {/* Mission Snapshot */}
       <section className="py-24 bg-white border-b border-brand-stone/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Reveal as="div" className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass">Mission Snapshot</p>
-              <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
-                Sage Futures advances long-term community wealth stability in South DeKalb County through sustainable development, capital alignment, and non-extractive economic strategy.
-              </p>
-              <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
-                We focus on building durable systems of land stewardship, financial readiness, and development coordination that strengthen underserved communities.
-              </p>
-            </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
-              <img
-                src={missionImage}
-                alt="Community involvement and collaboration"
-                className="w-full h-64 md:h-80 object-cover"
-              />
-            </div>
+          <Reveal as="div" className="max-w-3xl">
+            <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-brand-brass mb-4">Mission Snapshot</p>
+            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed mb-4">
+              Sage Futures advances long-term community wealth stability in South DeKalb County through sustainable development, capital alignment, and non-extractive economic strategy.
+            </p>
+            <p className="text-base md:text-lg text-brand-charcoal/80 leading-relaxed">
+              We focus on building durable systems of land stewardship, financial readiness, and development coordination that strengthen underserved communities.
+            </p>
           </Reveal>
         </div>
       </section>

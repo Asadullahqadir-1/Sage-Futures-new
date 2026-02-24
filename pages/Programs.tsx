@@ -5,6 +5,7 @@ import EcosystemPuzzle from "../components/EcosystemPuzzle";
 import founderImage from "../images/founder.jpg";
 import blackChildImage from "../images/black child.jpg";
 import sharedProsperityImage from "../images/Shared-Prosperity.jpg";
+import gardensImage from "../images/2nd image.jpg";
 
 const PROGRAM_PILLARS = [
   {
@@ -41,8 +42,8 @@ const PROGRAM_PILLARS = [
     description:
       "Environmental education, sustainable food systems, and land stewardship programs that strengthen resilience and ecological health as core components of community wealth.",
     link: "/contact",
-    image: "",
-    imageAlt: "",
+    image: gardensImage,
+    imageAlt: "Community gardens and environmental stewardship",
   },
 ];
 
