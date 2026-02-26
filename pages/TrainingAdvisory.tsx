@@ -12,7 +12,8 @@ const TrainingAdvisory: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brand-offwhite via-white to-brand-offwhite/80 pt-20 sm:pt-24 pb-12 sm:pb-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
-        <Reveal as="section" className="space-y-4 sm:space-y-6">\n          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-charcoal leading-tight">
+        <Reveal as="section" className="space-y-4 sm:space-y-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-charcoal leading-tight">
             Training &amp; Advisory
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl font-serif text-brand-charcoal/90">
