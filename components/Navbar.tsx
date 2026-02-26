@@ -69,13 +69,14 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-brand-sage hover:text-brand-brass focus:outline-none transition-colors"
+              className="p-2 rounded-md text-brand-sage hover:text-brand-brass focus:outline-none transition-colors z-50"
+              aria-label="Toggle menu"
             >
-              <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <svg className="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16m-7 6h7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>
@@ -84,15 +85,15 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen border-b border-brand-stone' : 'max-h-0'}`}>
-        <div className="px-4 pt-4 pb-8 space-y-2 bg-brand-offwhite">
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px] border-b border-brand-stone' : 'max-h-0'}`}>
+        <div className="px-4 pt-4 pb-8 space-y-1 bg-brand-offwhite shadow-lg">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className={`block px-3 py-4 text-sm font-bold uppercase tracking-widest border-b border-brand-stone/30 ${
-                isActive(link.path) ? 'text-brand-brass' : 'text-brand-charcoal'
+              className={`block px-4 py-3 text-sm font-bold uppercase tracking-wider rounded-md transition-colors ${
+                isActive(link.path) ? 'text-brand-brass bg-brand-sage/10' : 'text-brand-charcoal hover:bg-brand-sage/5'
               }`}
             >
               {link.name}
